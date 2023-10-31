@@ -10,7 +10,7 @@ const questions = [
         options: ["A markup language", "A planet", "A programming language"],
         answer: 0
     }
-    // Add questions here
+    // More questions here
 ];
     
 const quizSection = document.getElementById('quiz');
@@ -37,5 +37,11 @@ function loadQuestion() {
         showResult();
     }
 }
+function checkAnswer(selectedOption) {
+    if (selectedOption === questions[currentQuestion].answer) {
+        score++;
+    }
+    currentQuestion++;
+    loadQuestion();
 
 
