@@ -69,6 +69,19 @@ function checkAnswer(selectedOption) {
     }
   }
 
+  function showResult() {
+    quizSection.classList.add('hidden');
+    resultSection.classList.remove('hidden');
+    scoreDisplay.textContent = score;
+  }
+
+  // Function to handle the end of the quiz
+function endQuiz() {
+    clearInterval(timer); // Stop the timer
+    showResult();
+  }
+  
+
 loadQuestion();
 
 const startButton = document.getElementById('start');
