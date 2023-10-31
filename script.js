@@ -56,17 +56,18 @@ function loadQuestion() {
 }
 function checkAnswer(selectedOption) {
     if (selectedOption === questions[currentQuestion].answer) {
-        score++;
+      score++;
+    } else {
+      timeLeft -= timePenalty;
+      if (timeLeft < 0) timeLeft = 0;
     }
     currentQuestion++;
-    loadQuestion();
-}
-
-function showResult() {
-    quizSection.classList.add('hidden');
-    resultSection.classList.remove('hidden');
-    scoreDisplay.textContent = score;
-}
+    if (currentQuestion < questions.length) {
+      loadQuestion();
+    } else {
+      endQuiz(); // Call the function to handle the end of the quiz
+    }
+  }
 
 loadQuestion();
 
