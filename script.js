@@ -4,5 +4,13 @@ const questions = [
         options: ["A programming language", "A fruit", "A car"],
         answer: 0
     },
-    // Add more questions here
+
+    {
+        question: "What is HTML?",
+        options: ["A markup language", "A planet", "A programming language"],
+        answer: 0
+    }
+    // Add questions here
 ];
+    
+
