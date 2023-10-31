@@ -94,6 +94,16 @@ function endQuiz() {
 
 saveButton.addEventListener('click', saveScore);
 
+function saveScore() {
+    const initials = initialsInput.value.trim();
+    if (initials === '') {
+        alert('Please enter your initials.');
+        return;
+    }
+    const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+    highScores.push({ initials, score });
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+
 
 const startButton = document.getElementById('start');
 let timer;
