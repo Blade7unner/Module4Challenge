@@ -40,6 +40,8 @@ let score = 0;
 let timeLeft = 60; // timeLeft variable
 let timer; // Timer variable
 
+const timePenalty = 10; // timePenalty variable
+
 function loadQuestion() {
     if (currentQuestion <= questions.length - 1 ) {
         const questionData = questions[currentQuestion];
