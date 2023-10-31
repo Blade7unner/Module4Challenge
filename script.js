@@ -43,5 +43,16 @@ function checkAnswer(selectedOption) {
     }
     currentQuestion++;
     loadQuestion();
+}
+
+function showResult() {
+    quizSection.classList.add('hidden');
+    resultSection.classList.remove('hidden');
+    scoreDisplay.textContent = score;
+}
+
+loadQuestion();
+
+
 
 
