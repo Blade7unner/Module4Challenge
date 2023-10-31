@@ -59,6 +59,20 @@ function loadQuestion() {
         endQuiz();
     }
 }
+
+startButton.addEventListener('click', () => {
+    startButton.style.display = 'none';
+    timer = setInterval(updateTimer, 1000);
+    loadQuestion();
+});
+
+function startQuiz() {
+    startButton.style.display = 'none';
+    timer = setInterval(updateTimer, 1000);
+    loadQuestion();
+}
+
+
 function checkAnswer(selectedOption) {
     if (selectedOption === questions[currentQuestion].answer) {
       score++;
@@ -85,12 +99,6 @@ function endQuiz() {
     clearInterval(timer); // Stop the timer
     showResult();
   }
-
-  startButton.addEventListener('click', () => {
-    startButton.style.display = 'none';
-    timer = setInterval(updateTimer, 1000);
-    loadQuestion();
-});
 
 saveButton.addEventListener('click', saveScore);
 
