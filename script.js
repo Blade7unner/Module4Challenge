@@ -20,4 +20,8 @@ const scoreDisplay = document.getElementById('score');
 let currentQuestion = 0;
 let score = 0;
 
+function loadQuestion() {
+    if (currentQuestion < questions.length) {
+        const questionData = questions[currentQuestion];
+        
 
