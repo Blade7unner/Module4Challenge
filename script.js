@@ -13,4 +13,6 @@ const questions = [
     // Add questions here
 ];
     
-
+const quizSection = document.getElementById('quiz');
+const resultSection = document.getElementById('result');
+const scoreDisplay = document.getElementById('score');
