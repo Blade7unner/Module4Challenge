@@ -23,5 +23,9 @@ let score = 0;
 function loadQuestion() {
     if (currentQuestion < questions.length) {
         const questionData = questions[currentQuestion];
-        
+        quizSection.querySelector('h2').textContent = `Question ${currentQuestion + 1}`;
+        quizSection.querySelector('p').textContent = questionData.question;
+        const optionsList = quizSection.querySelector('ul');
+        optionsList.innerHTML = '';
+
 
