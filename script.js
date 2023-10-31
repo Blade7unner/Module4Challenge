@@ -86,8 +86,14 @@ function endQuiz() {
     showResult();
   }
 
+  startButton.addEventListener('click', () => {
+    startButton.style.display = 'none';
+    timer = setInterval(updateTimer, 1000);
+    loadQuestion();
+});
 
-loadQuestion();
+
+
 
 const startButton = document.getElementById('start');
 let timer;
