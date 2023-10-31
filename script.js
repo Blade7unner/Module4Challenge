@@ -111,7 +111,6 @@ function saveScore() {
     const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
     highScores.push({ initials, score });
     localStorage.setItem('highScores', JSON.stringify(highScores));
-
 }
 
 function updateTimer() { // timer logic
