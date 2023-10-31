@@ -32,10 +32,13 @@ const quizSection = document.getElementById('quiz');
 const resultSection = document.getElementById('result');
 const scoreDisplay = document.getElementById('score');
 const startButton = document.getElementById('start');
+const initialsInput = document.getElementById('initials');
+const saveButton = document.getElementById('save');
 
 let currentQuestion = 0;
 let score = 0;
 let timeLeft = 60; // timeLeft variable
+let timer; // Timer variable
 
 function loadQuestion() {
     if (currentQuestion <= questions.length - 1 ) {
@@ -92,8 +95,8 @@ startButton.addEventListener('click', startQuiz);
 function startQuiz() {
    
     startButton.style.display = 'none';
-  
     timer = setInterval(updateTimer, 1000); 
+    
     loadQuestion(); 
   }
 
