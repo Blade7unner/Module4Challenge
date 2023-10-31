@@ -4,12 +4,27 @@ const questions = [
         options: ["A programming language", "A fruit", "A car"],
         answer: 0
     },
-
     {
         question: "What is HTML?",
         options: ["A markup language", "A planet", "A programming language"],
         answer: 0
+    },
+    {
+        question: "What does CSS stand for?",
+        options: ["Cascading Style Sheet", "Computer Style Sheet", "Creative Style Sheet"],
+        answer: 0
+    },
+    {
+        question: "How do you declare a variable in JavaScript?",
+        options: ["x = 10;", "var x = 10;", "int x = 10;"],
+        answer: 1
+    },
+    {
+        question: "What is the purpose of `addEventListener` in JavaScript?",
+        options: ["To do math calculations", "To add two numbers", "To attach an event handler to an element"],
+        answer: 2
     }
+
     // More questions here
 ];
     
