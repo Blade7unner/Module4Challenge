@@ -35,6 +35,7 @@ const startButton = document.getElementById('start');
 
 let currentQuestion = 0;
 let score = 0;
+let timeLeft = 60; // timeLeft variable
 
 function loadQuestion() {
     if (currentQuestion <= questions.length - 1 ) {
