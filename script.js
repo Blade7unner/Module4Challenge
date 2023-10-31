@@ -16,3 +16,8 @@ const questions = [
 const quizSection = document.getElementById('quiz');
 const resultSection = document.getElementById('result');
 const scoreDisplay = document.getElementById('score');
+
+let currentQuestion = 0;
+let score = 0;
+
+
