@@ -68,6 +68,13 @@ function showResult() {
 
 loadQuestion();
 
+const startButton = document.getElementById('start');
+let timer;
+
+startButton.addEventListener('click', startQuiz);
+
+
+
 
 
 
