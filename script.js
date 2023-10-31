@@ -81,6 +81,19 @@ function startQuiz() {
     loadQuestion(); 
   }
 
+  const timePenalty = 10;
+let timeLeft = 60;
+
+function checkAnswer(selectedOption) {
+    if (selectedOption === questions[currentQuestion].answer) {
+        score++;
+  } else {
+    timeLeft -= timePenalty;
+    if (timeLeft < 0) timeLeft = 0;
+  }
+  currentQuestion++;
+  loadQuestion();
+}
 
 
 
