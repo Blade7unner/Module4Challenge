@@ -27,5 +27,15 @@ function loadQuestion() {
         quizSection.querySelector('p').textContent = questionData.question;
         const optionsList = quizSection.querySelector('ul');
         optionsList.innerHTML = '';
+        questionData.options.forEach((option, index) => {
+            const optionButton = document.createElement('button');
+            optionButton.textContent = option;
+            optionButton.addEventListener('click', () => checkAnswer(index));
+            optionsList.appendChild(document.createElement('li')).appendChild(optionButton);
+        });
+    } else {
+        showResult();
+    }
+}
 
 
