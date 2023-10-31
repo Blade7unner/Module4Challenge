@@ -31,6 +31,7 @@ const questions = [
 const quizSection = document.getElementById('quiz');
 const resultSection = document.getElementById('result');
 const scoreDisplay = document.getElementById('score');
+const startButton = document.getElementById('start');
 
 let currentQuestion = 0;
 let score = 0;
