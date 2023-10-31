@@ -60,6 +60,7 @@ function loadQuestion() {
     }
 }
 
+startButton.style.display = 'block'; 
 startButton.addEventListener('click', () => {
     startButton.style.display = 'none';
     timer = setInterval(updateTimer, 1000);
@@ -94,7 +95,6 @@ function checkAnswer(selectedOption) {
     scoreDisplay.textContent = score;
   }
 
-  // Function to handle the end of the quiz
 function endQuiz() {
     clearInterval(timer); // Stop the timer
     showResult();
