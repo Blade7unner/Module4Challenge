@@ -104,6 +104,15 @@ function saveScore() {
     highScores.push({ initials, score });
     localStorage.setItem('highScores', JSON.stringify(highScores));
 
+}
+
+function updateTimer() { // timer logic
+    
+}
+
+
+startQuiz(); // startQuiz when the script is loaded
+
 
 const startButton = document.getElementById('start');
 let timer;
