@@ -51,7 +51,7 @@ function loadQuestion() {
             optionsList.appendChild(document.createElement('li')).appendChild(optionButton);
         });
     } else {
-        showResult();
+        endQuiz();
     }
 }
 function checkAnswer(selectedOption) {
@@ -80,7 +80,7 @@ function endQuiz() {
     clearInterval(timer); // Stop the timer
     showResult();
   }
-  
+
 
 loadQuestion();
 
