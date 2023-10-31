@@ -70,7 +70,7 @@ function checkAnswer(selectedOption) {
     if (currentQuestion < questions.length) {
       loadQuestion();
     } else {
-      endQuiz(); // Call the function to handle the end of the quiz
+      endQuiz(); // function to handle the end of the quiz
     }
   }
 
