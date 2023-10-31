@@ -73,6 +73,13 @@ let timer;
 
 startButton.addEventListener('click', startQuiz);
 
+function startQuiz() {
+   
+    startButton.style.display = 'none';
+  
+    timer = setInterval(updateTimer, 1000); 
+    loadQuestion(); 
+  }
 
 
 
