@@ -14,3 +14,13 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
