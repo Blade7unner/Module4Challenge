@@ -92,7 +92,7 @@ function endQuiz() {
     loadQuestion();
 });
 
-
+saveButton.addEventListener('click', saveScore);
 
 
 const startButton = document.getElementById('start');
